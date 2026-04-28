@@ -1,0 +1,85 @@
+/* حاوية المحتوى الرئيسي لتوسيط البطاقات */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 70px); /* طول الشاشة ناقص طول الـ Navbar */
+  padding: 20px;
+}
+
+/* تصميم البطاقة الاحترافية (Card) */
+.auth-card {
+  background-color: #121212; /* لون البطاقة الداكن */
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+}
+
+.auth-card h2 {
+  margin-bottom: 30px;
+  color: #5b6cff; /* اللون الأزرق الجميل في صورك */
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* تنسيق الحقول (Inputs) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.auth-input:focus {
+  border-color: #5b6cff; /* يتغير اللون عند الكتابة */
+}
+
+/* تنسيق الزر (Button) */
+.auth-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #5b6cff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.auth-button:hover {
+  background-color: #4a59e0;
+}
+
+.auth-button:active {
+  transform: scale(0.98);
+}
+
+/* نصوص أسفل البطاقة */
+.auth-footer {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #888;
+}
+
+.auth-footer a {
+  color: #5b6cff;
+  font-weight: bold;
+}
